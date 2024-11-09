@@ -21,14 +21,14 @@
     }
     function calculadora(n1,n2,operacion){
         switch (operacion){
-          case 'suma':
-            return sumar (n1,n2);
-          case 'resta':
-            return restar (n1,n2);
-          case 'multiplicacion':
-            return multiplicar (n1,n2);
-          case 'division':
-            return dividir (n1,n2);
+          case 'sumar':
+            return suma (n1,n2);
+          case 'restar':
+            return resta (n1,n2);
+          case 'multiplicar':
+            return multi (n1,n2);
+          case 'dividir':
+            return divi (n1,n2);
           default:
             return "Operacion invalida "
         }
@@ -41,11 +41,8 @@
     console.log("esta es la suma!", Resultado);
     document.write("este es tu resultado!:", Resultado);
 
+
     </script>
-
-
-
-
 
 
 </body>
