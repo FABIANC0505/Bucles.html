@@ -7,10 +7,10 @@
 </head>
 <body>
     <script>
-    function suma(a,b){
+    function suma(ra,b){
         return a+b;
        }
-    function resta(a,b){
+    function restar(a,b){
         return a-b;
        }
     function multi(a,b){
@@ -22,20 +22,20 @@
     function calculadora(n1,n2,operacion){
         switch (operacion){
           case "sumar":
-            return sumar (n1,n2);
+            return sumar(n1,n2);
           case "restar":
-            return restar (n1,n2);
+            return restar(n1,n2);
           case "multiplicar":
-            return multiplicar (n1,n2);
+            return multi(n1,n2);
           case "dividir":
-            return dividir (n1,n2);
+            return divi(n1,n2);
           default:
             return "Operacion invalida ";
         }
     }
-    let numero1=parseFloat(prompt("Digite numero 1"));
-    let numero2=parseFloat(prompt("Digite numero 2"));
-    let operacion=prompt("Ingresa operacion: " (sumar, restar, multiplicar, dividir));
+    let numero1=parseFloat(prompt("Digite numero 1: "));
+    let numero2=parseFloat(prompt("Digite numero 2: "));
+    let operacion=prompt("Ingresa operacion:(sumar, restar, multiplicar, dividir)");
     let resultado=calculadora(numero1,numero2,operacion);
     
     console.log("esta es la suma!", Resultado);
