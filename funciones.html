@@ -7,28 +7,53 @@
 </head>
 <body>
     <script>
-    let numero1=parseFloat(prompt("Digite numero 1"));
-    let numero2=parseFloat(prompt("Digite numero 2"));
-    function suma(numero1,numero2){
-        Resultado=numero1+numero2;
-        return Resultado;
+    function suma(a,b){
+        return a+b;
     }
-    Resultado=suma(numero1,numero2);
-    console.log("esta es la suma!", Resultado);
-    
-    document.write("este es tu resultado!:", Resultado);
-    
-    let numero1=parseFloat(prompt("Digite numero 1"));
-    let numero2=parseFloat(prompt("Digite numero 2"));
-    function resta(numero1,numero2){
-        Resultado=numero1-numero2;
-        return Resultado;
+    function resta(a,b){
+        return a-b;
     }
-    Resultado=resta(numero1,numero2);
-    console.log("esta es la suma!", Resultado);
-    
-    document.write("este es tu resultado!:", Resultado);
+    function multiplicacion(a,b){
+        return a*b;
+    }
+    function division(a,b){
+        return a/b;
+    }
+    function calculadora(n1,n2,operacion){
+        switch (operacion){
+          case 'suma':
+            return suma (n1,n2);
+          case 'resta':
+            return resta (n1,n2);
+          case 'multiplicacion':
+            return multiplicacion (n1,n2);
+          case 'division':
+            return division (n1,n2);
+          default:
+            return "Operacion invalida "
+        }
+    }
 
+
+    let numero1=parseFloat(prompt("Digite numero 1"));
+    let numero2=parseFloat(prompt("Digite numero 2"));
+    let operacion=prompt("Ingresa operacion:"(suma,resta,multiplicacion,division));
+    let resultado= calculadora(numero1, numero2, operacion);
+    
+    
+    document.write("este es tu resultado!:", Resultado);
+    let numero1=parseFloat(prompt("Digite numero 1"));
+    let numero2=parseFloat(prompt("Digite numero 2"));let numero1=parseFloat(prompt("Digite numero 1"));
+    let numero2=parseFloat(prompt("Digite numero 2"));
+    console.log("esta es la suma!", Resultado);
+    document.write("este es tu resultado!:", Resultado);
+    
     </script>
+
+
+
+
+
+
 </body>
 </html>
